@@ -258,8 +258,8 @@ h1{animation:fadeUp 0.5s 0.2s both}
     </div>
     <div class="hero-stats">
       <div class="hstat"><span class="hstat-num">7/24</span><span class="hstat-lbl">Pasif İzleme</span></div>
-      <div class="hstat"><span class="hstat-num" style="font-size:1rem;line-height:1.4">İlk Taramada</span><span class="hstat-lbl">Tüm Cihazlar</span></div>
-      <div class="hstat"><span class="hstat-num">11 CVE</span><span class="hstat-lbl">Tek Raporda</span></div>
+      <div class="hstat"><span class="hstat-num">15</span><span class="hstat-lbl">OT Protokol</span></div>
+      <div class="hstat"><span class="hstat-num">5 Kural</span><span class="hstat-lbl">Correlation</span></div>
       <div class="hstat"><span class="hstat-num">ISO/IEC</span><span class="hstat-lbl">27001 &amp; 62443</span></div>
     </div>
   </div>
@@ -268,18 +268,19 @@ h1{animation:fadeUp 0.5s 0.2s both}
     <div class="terminal">
       <div class="t-bar">
         <div class="t-dot t-dot-r"></div><div class="t-dot t-dot-y"></div><div class="t-dot t-dot-g"></div>
-        <span class="t-title">fab-radar v1.2 — canlı izleme</span>
+        <span class="t-title">fab-radar v2.0 — canlı izleme</span>
       </div>
       <div class="t-body">
-        <div class="t-line"><span class="t-ts">[10:37:01]</span> <span class="t-ok">▶ Fab RADAR v1.2 başlatılıyor...</span></div>
-        <div class="t-line"><span class="t-ts">[10:37:02]</span> <span class="t-ok">✓ Mirror port bağlantısı kuruldu</span></div>
+        <div class="t-line"><span class="t-ts">[10:37:01]</span> <span class="t-ok">▶ Fab RADAR v2.0 başlatılıyor...</span></div>
+        <div class="t-line"><span class="t-ts">[10:37:02]</span> <span class="t-ok">✓ Mirror port bağlantısı kuruldu — 15 protokol aktif</span></div>
         <div class="t-line"><span class="t-ts">[10:37:03]</span> <span class="t-ok">✓ Pasif izleme aktif — 13 cihaz tespit edildi</span></div>
-        <div class="t-line"><span class="t-ts">[10:37:04]</span> <span class="t-warn">⚠ OT Cihaz: 192.168.1.10 — Siemens PLC/HMI</span></div>
-        <div class="t-line"><span class="t-ts">[10:37:05]</span> <span class="t-warn">⚠ OT Cihaz: 192.168.1.20 — Allen-Bradley PLC</span></div>
-        <div class="t-line"><span class="t-ts">[10:37:07]</span> <span class="t-err">✗ ALARM: Yetkisiz cihaz — 192.168.1.99</span></div>
-        <div class="t-line"><span class="t-ts">[10:37:07]</span> <span class="t-dim">→ E-posta ve SMS bildirimi gönderiliyor...</span></div>
+        <div class="t-line"><span class="t-ts">[10:37:04]</span> <span class="t-warn">⚠ OT Cihaz: 192.168.1.10 — Siemens S7 PLC</span></div>
+        <div class="t-line"><span class="t-ts">[10:37:05]</span> <span class="t-warn">⚠ OT Cihaz: 192.168.1.20 — Allen-Bradley PLC (EtherNet/IP)</span></div>
+        <div class="t-line"><span class="t-ts">[10:37:06]</span> <span class="t-err">✗ ALARM [KILL CHAIN]: Keşif + OT bağlantısı — 192.168.1.99</span></div>
+        <div class="t-line"><span class="t-ts">[10:37:07]</span> <span class="t-err">✗ ALARM [PLC WRITE]: Modbus FC=16 yazma komutu tespit edildi</span></div>
+        <div class="t-line"><span class="t-ts">[10:37:08]</span> <span class="t-dim">→ ntfy mobil bildirimi gönderildi</span></div>
         <div class="t-line"><span class="t-ts">[10:37:09]</span> <span class="t-ok">✓ CVE taraması — 11 eşleşme, 0 kritik</span></div>
-        <div class="t-line"><span class="t-ts">[10:37:10]</span> <span class="t-dim">→ ISO 27001 raporu hazırlanıyor...</span><span class="cursor"></span></div>
+        <div class="t-line"><span class="t-ts">[10:37:10]</span> <span class="t-dim">→ ISO 27001 / IEC 62443 raporu hazırlanıyor...</span><span class="cursor"></span></div>
       </div>
     </div>
   </div>
@@ -309,6 +310,8 @@ h1{animation:fadeUp 0.5s 0.2s both}
               <tr><td>Hedef Müşteri</td><td>Büyük Fabrika</td><td style="color:var(--g);font-weight:600">KOBİ &amp; Orta Ölçek</td></tr>
               <tr><td>Yıllık Maliyet</td><td style="color:var(--red)">$50K – $500K+</td><td style="color:var(--g)">Çok Daha Düşük</td></tr>
               <tr><td>Kurulum Süresi</td><td style="color:var(--red)">3–6 ay</td><td style="color:var(--g)">30 dakika</td></tr>
+              <tr><td>OT Protokol Sayısı</td><td>5–8</td><td style="color:var(--g);font-weight:600">15 protokol</td></tr>
+              <tr><td>Correlation Engine</td><td><span class="badge-n">Ayrı modül</span></td><td><span class="badge-y">✓ Dahili</span></td></tr>
               <tr><td>Türkçe Rapor</td><td><span class="badge-n">✗ Hayır</span></td><td><span class="badge-y">✓ Evet</span></td></tr>
               <tr><td>İnternet Gerektirmez</td><td><span class="badge-n">✗ Hayır</span></td><td><span class="badge-y">✓ Evet</span></td></tr>
               <tr class="hl-row"><td>Türkiye KOBİ için</td><td><span class="badge-n">✗</span></td><td><span class="badge-y">✓</span></td></tr>
@@ -327,15 +330,18 @@ h1{animation:fadeUp 0.5s 0.2s both}
     <h2>Tesisinizde görmediğiniz<br>her şeyi gösterir</h2>
     <p class="lead" style="font-size:14px">Fab RADAR; varlık keşfinden CVE taramasına, anomali tespitinden uyumluluk raporlamasına kadar tek cihazda.</p>
     <div class="feat-grid">
-      <div class="fcard"><span class="fcard-num">01</span><h3 style="color:#e07b00">Varlık Keşfi</h3><p>OT ağınızdaki her cihazı otomatik haritalandırır. IP, MAC, cihaz tipi, üretici — hepsini anlık envanterde tutar.</p></div>
-      <div class="fcard"><span class="fcard-num">02</span><h3 style="color:#006b4f">Yetkisiz Cihaz Tespiti</h3><p>Ağa yeni bir cihaz bağlandığı anda alarm üretir. Dakikalar içinde e-posta ve SMS ile bilgilendirilirsiniz.</p></div>
-      <div class="fcard"><span class="fcard-num">03</span><h3 style="color:#e07b00">Anomali Tespiti</h3><p>İlk iki haftada normal ağ davranışını öğrenir; temel çizgiden sapma olduğunda erken uyarı verir.</p></div>
-      <div class="fcard"><span class="fcard-num">04</span><h3 style="color:#006b4f">Keşif Saldırısı Uyarısı</h3><p>Saldırganın ağı tarama davranışını saldırı gerçekleşmeden tespit eder. OT trafiğinden belirgin biçimde farklıdır.</p></div>
-      <div class="fcard"><span class="fcard-num">05</span><h3 style="color:#e07b00">Mesai Dışı Aktivite</h3><p>OT cihazları öngörülebilir saatlerde çalışır. Beklenmedik gece aktivitesi anında işaretlenir.</p></div>
-      <div class="fcard"><span class="fcard-num">06</span><h3 style="color:#006b4f">CVE Güvenlik Açığı Eşleştirme</h3><p>Cihazları çevrimdışı NVD veritabanıyla karşılaştırır. Bilinen açıklara sahip PLC ve HMI'ları istismar edilmeden işaretler.</p></div>
-      <div class="fcard"><span class="fcard-num">07</span><h3 style="color:#e07b00">Endüstriyel Protokol İzleme</h3><p>Modbus TCP ve EtherNet/IP trafiğini ayrıştırır. PLC'ye beklenmedik yazma komutlarını kaydeder ve uyarı verir.</p></div>
-      <div class="fcard"><span class="fcard-num">08</span><h3 style="color:#006b4f">Uyumluluk PDF Raporu</h3><p>Türkçe ISO 27001 ve IEC 62443 raporlarını otomatik üretir. Denetim hazırlığı için manuel süreç gerekmez.</p></div>
-      <div class="fcard"><span class="fcard-num">09</span><h3 style="color:#e07b00">Çoklu Alarm Kanalı</h3><p>Yerel web paneli (internet gerekmez), e-posta ve SMS ile alarm iletimi. Tesis yöneticisine her kanaldan ulaşır.</p></div>
+      <div class="fcard"><span class="fcard-num">01</span><h3 style="color:#e07b00">Varlık Keşfi</h3><p>OT ağınızdaki her cihazı otomatik haritalandırır. IP, MAC, cihaz tipi, üretici — hepsini anlık envanterde tutar. Web panelden manuel ekleme/silme.</p></div>
+      <div class="fcard"><span class="fcard-num">02</span><h3 style="color:#006b4f">Whitelist & Yetkisiz Cihaz</h3><p>Ağa yeni bir cihaz bağlandığı anda alarm üretir. Web panelden tek tıkla onaylama, otomatik whitelist yönetimi. Network Access Control dahili.</p></div>
+      <div class="fcard"><span class="fcard-num">03</span><h3 style="color:#e07b00">OT Anomali Tespiti</h3><p>Yeni OT cihazı, protokol değişimi, risk artışı, mesai dışı OT ve yüksek frekanslı paket tespiti. 5 farklı OT anomali kuralı.</p></div>
+      <div class="fcard"><span class="fcard-num">04</span><h3 style="color:#006b4f">Correlation Engine</h3><p>Kill Chain, PLC Write komutu, mesai dışı OT, yeni cihaz+OT, çok protokol — 5 kural tabanlı saldırı zinciri tespiti. Rakiplerde ayrı modül olarak satılır.</p></div>
+      <div class="fcard"><span class="fcard-num">05</span><h3 style="color:#e07b00">15 OT Protokol Desteği</h3><p>Modbus TCP, EtherNet/IP, DNP3, IEC 60870-5-104, Siemens S7, PROFINET, BACnet, OPC-UA, FINS (Omron), HART-IP, ICCP ve daha fazlası.</p></div>
+      <div class="fcard"><span class="fcard-num">06</span><h3 style="color:#006b4f">CVE Güvenlik Açığı Eşleştirme</h3><p>Cihazları çevrimdışı NVD veritabanıyla karşılaştırır. Siemens, Rockwell, Schneider, Omron — bilinen açıklar istismar edilmeden işaretlenir.</p></div>
+      <div class="fcard"><span class="fcard-num">07</span><h3 style="color:#e07b00">PLC Write Komutu Tespiti</h3><p>Modbus FC 5/6/15/16 yazma komutlarını gerçek zamanlı yakalar. PLC'ye beklenmedik komut geldiğinde anında KRİTİK alarm üretir.</p></div>
+      <div class="fcard"><span class="fcard-num">08</span><h3 style="color:#006b4f">Uyumluluk PDF Raporu</h3><p>Türkçe ISO 27001 ve IEC 62443 raporlarını otomatik üretir. Whitelist durumu, OT anomali özeti, CVE listesi ve öneriler dahil.</p></div>
+      <div class="fcard"><span class="fcard-num">09</span><h3 style="color:#e07b00">Mesai Dışı & Tatil Takvimi</h3><p>Türkiye resmi tatilleri + özel fabrika bakım günleri. Hafta sonu veya gece OT trafiği anında işaretlenir.</p></div>
+      <div class="fcard"><span class="fcard-num">10</span><h3 style="color:#006b4f">Pasif OS Tespiti</h3><p>Ağa paket göndermeden TTL ve TCP parmak izi ile işletim sistemi tespiti. Cihaz değişimini algılar, envanter otomatik güncellenir.</p></div>
+      <div class="fcard"><span class="fcard-num">11</span><h3 style="color:#e07b00">Öğrenme Modu</h3><p>Demo (10 dk), kurulum (2 saat), tam (2 hafta) modlarıyla whitelist oluşturur. Öğrenme bittikten sonra otomatik izleme moduna geçer.</p></div>
+      <div class="fcard"><span class="fcard-num">12</span><h3 style="color:#006b4f">Config Koruma & Heartbeat</h3><p>Konfigürasyon değişiklikleri anında tespit edilir. Her 5 dakikada ntfy mobil bildirimi ile sistem sağlığı rapor edilir.</p></div>
     </div>
   </div>
 </section>
@@ -429,7 +435,7 @@ h1{animation:fadeUp 0.5s 0.2s both}
 
 <footer>
   <span class="footer-l">FAB RADAR — Fabrika Ağ Güvenliği</span>
-  <span class="footer-r">© 2026 Fab RADAR. Tüm hakları saklıdır.</span>
+  <span class="footer-r">© 2026 Fab RADAR v2.0. Tüm hakları saklıdır.</span>
 </footer>
 
 </body>
